@@ -20,7 +20,7 @@ final class FirstViewController: UIViewController {
 
     private func commonInit() {
         tabBarItem = UITabBarItem(
-            title: "First",
+            title: "FIRST",
             image: .init(systemName: "circle.fill"),
             tag: 0
         )
@@ -60,7 +60,8 @@ final class FirstViewController: UIViewController {
         super.decodeRestorableState(with: coder)
         assert(
             isViewLoaded,
-            "We assume the controller is never restored without loading its view first."
+            "We assume the controller is never restored without loading its view First."
+            print("GitHub testing")
         )
         slider?.value = coder.decodeFloat(forKey: Self.encodingKeySliderValue)
     }
